@@ -1,38 +1,47 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>learning html</title>
-    </head>
-    <body>
-        <form>
-            <label for="username">Enter username</label>
-            <input type="text" name="username" id="username">
-            <br>
-            <label for="email">email</label>
-            <input type="email" name="email" id="email">
-            <br>
-            <label for="password">password</label>
-            <input type="password" name="password" id="password">
-            <p>Select your age</p>
-            <input type="radio" name="age" value="0-25" id="option-1">
-            <label for="option-1">0-25</label>
-            <input type="radio" name="age" id="option-2" value="26-50">
-            <label for="option-2">26-50</label>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="styles.css">
+    <title>Marioclub</title>
+</head>
+<body>
+    <header>
+        <h1>Marioclub</h1>
+    </header>
+    <section class="banner">
+        <img src="img/banner.png" alt="marioclub welcome banner">
+        <div class="welcome">
+            <h2>Welcome to <br><span>Marioclub</span></h2>
+        </div>
+    </section>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="/join.html" class="join">Join the club</a></li>
+            <li><a href="/news.html">latest news</a></li>
+            <li><a href="/games.html">New games</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-            <br><br>
+    <main>
+        <article>
+            <h2>It's a me, Mario</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt rem vero laudantium consectetur officiis labore magnam ipsa quos cumque enim repellat quasi, voluptatem, dignissimos quia hic sed. Temporibus, necessitatibus a.</p>
+        </article>
+        <ul class="images">
+            <li><img src="img/thumb-1.png" alt="mario thumb 1"></li>
+            <li><img src="img/thumb-2.png" alt="mario thumb 2"></li>
 
-            <label for="question">Security question:</label>
-            <select name="question" id="question">
-                <option value="q1">What's your pet's name</option>
-                <option value="q2">What was your school name</option>
-            </select>
-            <br><br><br>
+        </ul>
+    </main>
+    <section class="join"><h2>Join Today</h2></section>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt praesentium qui corporis saepe hic, accusantium ipsa autem maxime adipisci distinctio, reiciendis est totam veritatis quas optio asperiores, harum nisi. Repellendus.</p>
+    <form action="">
+        <input type="email" name="email" placeholder="type email & hit enter" required>
+    </form>
 
-            <label for="bio">Enter your bio:</label>
-            <br>
-            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you..."></textarea>
-            <br>
-            <input type="submit" value="Submit the form">
-        </form>
-    </body>
+    <footer>
+        <p class="copyright">Super mario 2021</p>
+    </footer>
+</body>
 </html>
